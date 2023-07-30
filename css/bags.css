@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+    --clr-white: #fff;
+    --clr-black: #1c0c0c;
+    --clr-blue: #6495ed;
+    --clr-green: rgb(76, 200, 171);
+    --clr-coral: #ff7f50;
+    --padding: .7rem .8rem;
+    --padding2: 0 1rem;
+    --padding3: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* NAV-BAR */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+.mid-nav {
+    flex-grow: 2;
+}
+
+.nav-bar2 {
+    color: var(--clr-black) !important;
+    font-weight: 600;
+    transition:  400ms ease-in;
+}
+.nav-bar2:hover{
+    color: var(--clr-blue)!important;
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 10%;
+}
+
+.form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    align-items: center;
+    width: 15%;
+    padding: var(--padding2);
+}
+
+.nav-link1 {
+    background-image: linear-gradient(120deg, var(--clr-green), var(--clr-blue));
+    padding: var(--padding);
+    color: var(--clr-white);
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: 400ms ease-in;
+
+}
+
+.nav-link1:hover {
+    transform: scale(1.1)
+}
+
+/* CATEGORIES */
+ 
+.container1{
+width: 80%;
+max-width: 1128px;
+margin-top: 6rem;
+padding: 1rem;
+}
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+.content-div{
+    position: relative;
+    grid-column: span 3;
+    padding-top: 2rem;
+}
+.content-div span, h2{
+    font-weight: 600;
+}
+.content-div h2{
+    padding-top: 1rem;
+}
+.img-container{
+    display: inline-block;
+    grid-column: span 1;
+}
+.star,.star2{
+    width: 30px;
+}
+.details{
+    padding: 1.5rem 0;
+}
+.details h3{
+    font-weight: 600;
+}
+.buy{
+    display: block;
+    padding: var(--padding);
+    border-radius: 5px;
+    background-image: linear-gradient(120deg, var(--clr-green), var(--clr-blue));
+    border: 0;
+    margin: 1rem 0;
+    z-index: 1;
+}
+/* shoe category */
+.shoe-img img{
+    max-width: 100%;
+}
+
+.modal-box{
+    width: 52%;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    z-index: 2;
+    padding: 1rem 1rem 0;
+    box-shadow: 2px 1px 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: var(--clr-white);
+}
+.hide{
+    display: none;
+}
+.close-button{
+    float: right;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: transparent; 
+}
+.modal-box input, label{
+    display: block;
+    width: 100%;
+    border: 0;
+}
+.modal-box input:focus{
+    outline: 1px solid var(--clr-blue);
+    border-radius: 5px;
+}
+.modal-box h3, label{
+    padding-top: 1rem;
+}
+.modal-box h3{
+    opacity: 0.5;
+}
+.modal-box input{
+    border-bottom: 1px solid var(--clr-black);
+    padding-top: 1rem;
+}
+.info-btn{
+    padding: var(--padding);
+    border-radius: 5px;
+    background-image: linear-gradient(120deg, var(--clr-green), var(--clr-blue)); 
+    margin-top: 1rem;
+    width: 100%;
+    border: 0;
+    color:var(--clr-white) ;
+}
+@media only screen and (max-width:992px) {
+    .content-div, .img-container{
+        grid-column: span 4;
+    }
+}

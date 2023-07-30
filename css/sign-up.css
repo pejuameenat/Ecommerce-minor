@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+:root{
+    --clr-white: #fff;
+    --clr-black: #1c0c0c;
+    --clr-blue: #6495ed;
+    --clr-green: rgb(76, 200, 171);
+    --padding: .7rem .8rem;
+    --padding2: 0 1rem;
+    --padding3: 1rem;
+}
+
+ body{
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+ }
+ .fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+.mid-nav {
+    flex-grow: 2;
+}
+
+.nav-bar2 {
+    color: var(--clr-black) !important;
+    font-weight: 600;
+    transition:  400ms ease-in;
+}
+.nav-bar2:hover{
+    color: var(--clr-blue)!important;
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 10%;
+}
+
+.form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    align-items: center;
+    width: 15%;
+    padding: var(--padding2);
+}
+
+.nav-link1 {
+    background-image: linear-gradient(120deg, var(--clr-green), var(--clr-blue));
+    padding: var(--padding);
+    color: var(--clr-white);
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: 400ms ease-in;
+
+}
+
+.nav-link1:hover {
+    transform: scale(1.1)
+}
+ fieldset button, img, input{
+    display: block;
+}
+fieldset button, input{
+    width: 100%;
+    padding: 1em .8em;
+    border-radius: 7px;
+    border: none;
+}
+input{
+    font-size: .9rem;
+}
+input:focus{
+    outline: 2px solid rgb(121, 243, 151);;
+}
+/* FORM */
+.container{
+    max-width: 1100px;
+}
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border: 1px solid var(--clr-black);
+    margin: 5rem 0;
+    
+}
+.grid-item0{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, var(--clr-green), var(--clr-blue));
+    grid-column: span 7;
+
+}
+.grid-item0 h1{
+    font-size: 7rem;
+    color: white;
+    padding: 4rem 0 1rem;
+    line-height: 110px;
+}
+ .grid-item{
+    background-color: var(--clr-white);
+    grid-column: span 5;
+    padding: 2em .9em 1em;
+    border-radius: 15px;
+    color: var(--clr-black);
+}
+ 
+ 
+.grid-item h1{
+    color: var(--clr-black);
+     font-size: 3em;
+     padding: 2em 0 .8em 0;
+     
+}
+.grid-item span{
+    font-weight:600
+}
+.input-box-2, button{
+    margin-bottom: 1em;
+    position: relative;
+}
+.view{
+    display: inline;
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 1em;
+    z-index: 1;
+}
+fieldset{
+    padding: 1em;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    
+}
+fieldset a{
+    color: var(--clr-green);;
+    font-weight: 600;
+}
+ 
+fieldset p{
+    color: white;
+    padding-bottom: 1em;
+    font-size: .9rem;
+}
+.grid-wrapper h5, p{
+    color: white;
+    padding-left: .8em;
+}
+.button{
+    background-image: linear-gradient(120deg, var(--clr-green), var(--clr-blue));
+    color: white;
+    font-weight: 600;
+}
+/* MODAL */
+
+.modal-box{
+    width: 30%;
+    padding: 1rem;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    z-index: 10;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    box-shadow:0 3rem 5rem rgba(0, 0, 0, 0.2);
+}
+.modal-box p{
+    color: var(--clr-black);
+}
+ .hide{
+    display: none;
+} 
+.close{
+    border: 2px solid red;
+    float: right;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 120% ;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: .8s ease;
+   backdrop-filter: blur(1.5px);
+}
+
+@media only screen and (max-width:800px){
+    .show-modal{
+        width: 80%;
+        left:5%;
+    }
+}
