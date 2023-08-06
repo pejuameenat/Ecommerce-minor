@@ -77,7 +77,7 @@ font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     border: 1px solid var(--clr-black);
-    margin: 5rem 0;
+    margin: 7rem 0;
     
 }
 .grid-item{

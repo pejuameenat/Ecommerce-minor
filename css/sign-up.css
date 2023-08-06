@@ -91,7 +91,7 @@ input:focus{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     border: 1px solid var(--clr-black);
-    margin: 5rem 0;
+    margin: 7rem 0;
     
 }
 .grid-item0{
@@ -214,5 +214,15 @@ fieldset p{
     .show-modal{
         width: 80%;
         left:5%;
+    }
+    .container{
+        padding: 4rem 0;
+    }
+    .grid-item0, .grid-item{
+        grid-column:span 12;
+    }
+    .grid-item0 h1{
+        font-size: 5rem;
+        padding: 1.5rem 0;
     }
 }
